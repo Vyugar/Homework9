@@ -17,21 +17,13 @@ void NumberCounter(int numberN)
         Console.WriteLine($"{numberN} не натуральное число");
         return;
     }
-    if (numberN == 0) return;
-    /*
-    Др. вариант:
-    if (numberN == 0)
-    {
-        Console.WriteLine($"Вы ввели {NumberN}, который меньше 1");
-        return;
-    }
-    */
+    else if (numberN == 0) return;
 
-    else if (numberN > 0)
+    else
     {
         Console.Write("{0,4}", numberN);
         NumberCounter(numberN - 1);
-    }
+    }   
 }
 
 NumberCounter(numberN);
